@@ -48,17 +48,13 @@
                 <td>{{$product->qty}}</td>
                 <td>{{$product->category}}</td>
                 <td class="options">
-                    {{-- <button class="edit"><b>Edit</b></button>
-                    <button class="delete"><b>Delete</b></button> --}}
 
                     <a href="{{route('products.edit', ['product' => $product])}}" class="edit"><b>Edit</b></a>
                     <form method="post" action="{{route('products.delete',['product'=>$product])}}">
                         @csrf
                         @method('delete')
 
-                        {{-- <input type="submit" value="Delete" class="delete"/> --}}
                         <button type="submit" class="delete"><b>Delete</b></button>
-
                     </form>
                 </td>
             </tr>

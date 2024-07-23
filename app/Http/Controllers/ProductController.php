@@ -27,7 +27,6 @@ class ProductController extends Controller
     }
 
     public function edit(Product $product) {
-        // dd($product);
         $products = Product::all();
         return view('products.edit',['edit'=>$product,'products'=>$products]);
    
