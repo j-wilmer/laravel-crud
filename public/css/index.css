@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+button,
+.add {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.add {
+    background-color: gray;
+    color: aliceblue;
+    padding: 0px 15px;
+}
+.add:hover {
+    background-color: rgb(104, 104, 104);
+}
+a {
+    text-decoration: none;
+}
+.options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.edit {
+    color: rgb(0, 21, 255);
+    font-size: 16px;
+    cursor: pointer;
+}
+.edit:hover {
+    color: rgb(0, 13, 160);
+}
+.delete {
+    font-size: 16px;
+    color: red;
+    cursor: pointer;
+}
+.delete:hover {
+    color: rgb(158, 0, 0);
+}
+tr {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.377);
+}
+th,
+td {
+    padding: 20px 30px;
+    text-align: center;
+}
+td {
+    opacity: 70%;
+}
+select {
+    padding: 7px 30px;
+}
+table {
+    border-collapse: collapse;
+    box-shadow: 0px 0px 73px -25px rgb(84 0 255 / 70%);
+    border: 1px solid gray;
+    /* width: 100%; */
+    /* border-collapse: separate; */
+    border-spacing: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+input {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+/* ---------------- */
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.Container > .Title {
+    text-align: center;
+}
+.Container > form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.Container > table {
+    margin-top: 60px;
+    border-radius: 5px;
+}
